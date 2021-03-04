@@ -1,18 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿using UnityEngine;
+using UnityEngine.UI;
 public class NewBehaviourScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Text pawAmount;
+    private int paws;
 
-    // Update is called once per frame
-    void Update()
+    public void onclick()
     {
-        
+        paws++;
+        pawAmount.text = paws + "";
     }
 }
